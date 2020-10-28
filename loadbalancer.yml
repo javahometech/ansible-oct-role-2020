@@ -1,0 +1,7 @@
+---
+- hosts: loadbalancers
+  become: True
+  roles:
+    - role: loadbalancer
+      vars:
+        backend_port: 80
